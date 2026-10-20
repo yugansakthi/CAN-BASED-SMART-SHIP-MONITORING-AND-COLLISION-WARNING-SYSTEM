@@ -7,7 +7,7 @@ void can2_init(void){
 	C2MOD=0x1; //CAN2 into Reset  Mode 
 	AFMR=0x2; //accept all receiving messages(data/remote)
 	C2BTR=0x001C001D; //B125Kbps @ PLCK=60MHz(BRP=Pclk/bit rate*16)
-	C2MOD=0x0; //CAN1 into Normal Mode
+	C2MOD=0x0; //CAN2 into Normal Mode
 }
 void can2_tx(CAN2_MSG m1)
 {
